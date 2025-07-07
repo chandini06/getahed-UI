@@ -1,0 +1,63 @@
+import React from 'react';
+import './Journeys.css';
+
+import card1 from '../assets/card1.png';
+import card2 from '../assets/card2.png';
+import card3 from '../assets/card3.png';
+import card4 from '../assets/card4.png';
+import card5 from '../assets/card5.png';
+import card6 from '../assets/card6.png';
+
+const journeyData = [
+  {
+    image: card1,
+    title: 'Write an professional email with help of AI',
+  },
+  {
+    image: card2,
+    title: 'Enhance your writing skills with AI - Tools',
+  },
+  {
+    image: card3,
+    title: 'Create Beautiful user interface using AI',
+  },
+  {
+    image: card4,
+    title: 'Design futuristic logos with AI assistance',
+  },
+  {
+    image: card5,
+    title: 'Write effective content for product marketing',
+  },
+  {
+    image: card6,
+    title: 'Improve grammar and tone using AI tools',
+  },
+];
+
+const Journeys = () => {
+  return (
+    <div className="journeys-section">
+      <div className="journeys-header">
+        <h3>Journeys Made For You</h3>
+        <span className="journeys-more">More &gt;&gt;</span>
+      </div>
+
+      <div className="journeys-grid">
+        {journeyData.map((item, index) => (
+          <div className="journey-card" key={index}>
+            <img src={item.image} alt={item.title} />
+            <p className="card-title">{item.title}</p>
+            <div className="card-meta">
+              <span>2 Hours</span>
+              <span>10 Modules</span>
+              <span>50+</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Journeys;
