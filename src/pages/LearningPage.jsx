@@ -1,5 +1,5 @@
 import React from 'react';
-import ContinueJourney from '../components/ContinueJourney';
+import ContinueJourney1 from '../components/ContinueJourney1';
 import RightWidget from '../components/RightWidget'; 
 import Journeys1 from '../components/Journeys1';
 import downimg from '../assets/downimg.png'; // ✅ Import image
@@ -11,7 +11,7 @@ const LearningPage = () => {
     <>
       <div className="learning-layout">
         <div className="left-content">
-          <ContinueJourney />
+          <ContinueJourney1 />
           <Journeys1 />
         </div>
         <RightWidget />

@@ -9,7 +9,8 @@
 .ask-box {
   background-color: #e5d8ff;
   border-radius: 20px;
-  padding: 24px 16px;
+  height: 250px;
+  padding: 24px 24px;
   text-align: center;
 }
 
@@ -69,6 +70,7 @@
   background-color: #fff;
   border-radius: 20px;
   padding: 20px;
+  height: 263px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 }
 
@@ -118,7 +120,7 @@
   font-size: 13px;
   color: #666;
   margin-bottom: 12px;
-  gap: 4px;
+  gap: 20px;
 }
 
 .streak-fire {
