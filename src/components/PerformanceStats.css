@@ -1,0 +1,80 @@
+.performance-container {
+  padding: 24px;
+  max-width: 740px;
+  width: 200px;
+  height: 190px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.performance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.performance-heading {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.filter-dropdown {
+  padding: 6px 12px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #333;
+  background: #f9f9f9;
+}
+
+.performance-stats-row {
+  display: flex;
+  gap: 13px;
+  justify-content: space-between;
+}
+
+/* Card */
+.performance-card {
+  flex: 1;
+  background-color: #f5f0ff;
+  border-radius: 20px;
+  padding: 25px;
+  height: 85px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  text-align: center;
+}
+
+/* Icon circle */
+.icon-circle {
+  background-color: #e0d6ff;
+  width: 35px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px auto;
+}
+
+/* Icon */
+.stat-icon {
+  color: #8733ff;
+  font-size: 20px;
+}
+
+/* Titles and values */
+.stat-value {
+  font-size: 14px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.stat-subtext {
+  font-size: 12px;
+  color: #808080;
+}

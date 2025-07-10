@@ -1,0 +1,87 @@
+.journeys-section2{
+  margin-top: 24px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  
+}
+
+.journeys-header2 {
+  display: flex;
+ gap:10px;
+ 
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.journeys-header2 h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.journeys-more2 {
+  font-size: 14px;
+  color: #8733FF;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.journeys-wrapper2 {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+  width: 96%;       
+  margin-left: 0px;        
+  margin-top: 5px;
+         
+             
+     
+}
+
+
+
+
+.journeys-grid2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.journey-card2 {
+  width: 210px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  
+}
+
+.journey-card2 img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.card-title2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  
+  margin-bottom: 12px;
+}
+
+.card-meta2 {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  font-size: 12px;
+  color: #A9B3D3;
+}
+
+.card-meta2 span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}

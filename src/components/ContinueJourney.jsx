@@ -43,7 +43,10 @@ const ContinueJourney = () => {
               <div
                 className="progress-bar"
                 style={{ width: `${course.progress}%` }}
+<<<<<<< HEAD
 
+=======
+>>>>>>> eaf498d52d50677c0d457de01f5363c608d3f58c
               ></div>
               <span className="progress-percent">{course.progress}%</span>
             </div>
@@ -55,4 +58,8 @@ const ContinueJourney = () => {
   );
 };
 
+<<<<<<< HEAD
 export default ContinueJourney;
+=======
+export default ContinueJourney;
+>>>>>>> eaf498d52d50677c0d457de01f5363c608d3f58c
