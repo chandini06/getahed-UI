@@ -1,6 +1,6 @@
 import React from 'react';
 import { FiClock, FiBookOpen, FiUsers } from 'react-icons/fi';
-import './Journeys.css';
+import './Journeys1.css';
 
 import card1 from '../assets/card1.png';
 import card2 from '../assets/card2.png';
@@ -36,11 +36,11 @@ const journeyData = [
   },
 ];
 
-const Journeys = () => {
+const Journeys1 = () => {
   return (
-    <div className="journeys-wrapper">
-      <div className="journeys-section">
-        <div className="journeys-header">
+    <div className="journeys-wrapper1">
+      <div className="journeys-section1">
+        <div className="journeys-header1">
           <h3>Journeys Made For You</h3>
           <span className="journeys-more">More &gt;&gt;</span>
         </div>
@@ -63,4 +63,4 @@ const Journeys = () => {
   );
 };
 
-export default Journeys;
+export default Journeys1;

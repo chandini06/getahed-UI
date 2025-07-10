@@ -1,10 +1,10 @@
 import React from "react";
-import "./ContinueJourney.css";
+import "./ContinueJourney1.css";
 import { FaClock, FaUsers, FaBookOpen } from "react-icons/fa";
 import CourseCard1 from "../assets/CourseCard1.png";
 import CourseCard2 from "../assets/CourseCard2.png";
 
-const ContinueJourney = () => {
+const ContinueJourney1 = () => {
   const courses = [
     {
       id: 1,
@@ -27,30 +27,30 @@ const ContinueJourney = () => {
   ];
 
   return (
-    <div className="continue-journey-container">
-      <h2 className="continue-title">Continue Your Journey</h2>
-      <div className="course-card-wrapper">
+    <div className="continue-journey-container1">
+      <h2 className="continue-title1">Continue Your Journey</h2>
+      <div className="course-card-wrapper1">
         {courses.map((course) => (
-          <div className="course-card" key={course.id}>
-            <img src={course.image} alt={course.title} className="course-image" />
-            <h3 className="course-title">{course.title}</h3>
-            <div className="course-info">
+          <div className="course-card1" key={course.id}>
+            <img src={course.image} alt={course.title} className="course-image1" />
+            <h3 className="course-title1">{course.title}</h3>
+            <div className="course-info1">
               <span><FaClock /> {course.duration}</span>
               <span><FaBookOpen /> {course.modules}</span>
               <span><FaUsers /> {course.learners}</span>
             </div>
-            <div className="progress-bar-container">
+            <div className="progress-bar-container1">
               <div
-                className="progress-bar"
+                className="progress-bar1"
                 style={{ width: '${course.progress}%' }}
               ></div>
-              <span className="progress-percent">{course.progress}%</span>
+              <span className="progress-percent1">{course.progress}%</span>
             </div>
-            <button className="resume-button">Resume Learning</button>
+            <button className="resume-button1">Resume Learning</button>
           </div>
         ))}
       </div>
     </div>
   );
 };
-export default ContinueJourney;
+export default ContinueJourney1;
