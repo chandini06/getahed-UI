@@ -1,8 +1,8 @@
 import React from 'react';
 import Banner from '../components/WelcomeBanner';
 import AIPrompt from '../components/AIHelpPrompt';
-import './Dashboard.css';
 import Journeys from '../components/Journeys';
+import './Dashboard.css';
 
 const Dashboard = () => {
   return (
@@ -10,7 +10,16 @@ const Dashboard = () => {
       <div className="top-section">
         <Banner />
         <AIPrompt />
-        <Journeys/>
+        <Journeys />
+        {/* You can remove this button later */}
+        <button
+          onClick={() => {
+            localStorage.setItem('hasStartedLearning', 'true');
+            window.location.href = '/learning'; // 👈 Go to learning page
+          }}
+        >
+          Start Learning
+        </button>
       </div>
     </div>
   );

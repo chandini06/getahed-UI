@@ -1,0 +1,156 @@
+.right-widget {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* Ask box */
+.ask-box {
+  background-color: #e5d8ff;
+  border-radius: 20px;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.avatar-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #8733FF;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+}
+
+.ask-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.ask-title .highlight {
+  color: #8733FF;
+  font-weight: 600;
+}
+
+.ask-input {
+  display: flex;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 6px 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ask-input input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  background: transparent;
+  padding: 6px;
+}
+
+.send-btn {
+  width: 32px;
+  height: 32px;
+  background-color: #8733FF;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Streak box */
+.streak-box {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.streak-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.streak-days {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.day-item {
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
+
+.day-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #e0d5fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+
+.day-circle.active {
+  background-color: #ffcccb;
+}
+
+.fire-icon {
+  color: #ff6600;
+  font-size: 14px;
+}
+
+.streak-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 12px;
+  gap: 4px;
+}
+
+.streak-fire {
+  color: #ff6600;
+  font-size: 50px; 
+  margin-top: 20px;
+}
+
+.streak-count {
+  font-size: 13px;
+  font-weight: 500;
+  color: #A3AED0;
+}
+
+.streak-progress {
+  width: 85%;
+  height: 6px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.streak-fill {
+  height: 100%;
+  background-color: #8733FF;
+  transition: width 0.3s;
+}
+
+.streak-percent {
+  font-size: 12px;
+  color: #A3AED0;
+  text-align: right;
+  margin-top: -13px;
+}
