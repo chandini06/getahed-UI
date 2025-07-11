@@ -23,12 +23,10 @@
   flex-wrap: wrap;
 }
 
-/* First child: ContinueJourney takes remaining space */
 .journey-grid > div:first-child {
   flex: 1;
 }
 
-/* Second child: PerformanceStats fixed width */
 .journey-grid > div:last-child {
   width: 320px;
   flex-shrink: 0;

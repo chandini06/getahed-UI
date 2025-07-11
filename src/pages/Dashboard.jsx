@@ -11,11 +11,10 @@ const Dashboard = () => {
         <Banner />
         <AIPrompt />
         <Journeys />
-        {/* You can remove this button later */}
         <button
           onClick={() => {
             localStorage.setItem('hasStartedLearning', 'true');
-            window.location.href = '/learning'; // 👈 Go to learning page
+            window.location.href = '/learning'; 
           }}
         >
           Start Learning

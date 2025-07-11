@@ -12,7 +12,7 @@ import {
   FaSignOutAlt,
   FaQuestionCircle,
 } from 'react-icons/fa';
-import { Link } from 'react-router-dom'; // 👈 Import Link
+import { Link } from 'react-router-dom'; 
 
 const Sidebar = () => {
   return (

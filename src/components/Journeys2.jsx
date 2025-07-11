@@ -41,7 +41,7 @@ const Journeys2 = () => {
     <div className="journeys-wrapper2">
       <div className="journeys-section2">
         <div className="journeys-header2">
-          <h3>Journeys Made For You</h3>
+          <h3>Recommended Journeys</h3>
           <span className="journeys-more2">More &gt;&gt;</span>
         </div>
 

@@ -5,7 +5,6 @@
   font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-/* Ask box */
 .ask-box {
   background-color: #e5d8ff;
   border-radius: 20px;
@@ -65,7 +64,6 @@
   cursor: pointer;
 }
 
-/* Streak box */
 .streak-box {
   background-color: #fff;
   border-radius: 20px;

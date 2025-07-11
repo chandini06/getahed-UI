@@ -17,3 +17,24 @@
   gap: 24px;           
 }
 
+button {
+  background-color: #8733FF; 
+  color: #fff;
+  border: none;
+  padding: 7px 3px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+button:hover {
+  background-color: #7329d4;
+}
+
+button:active {
+  background-color: #5f1fc2;
+}

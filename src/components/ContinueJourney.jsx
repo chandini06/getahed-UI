@@ -53,4 +53,5 @@ const ContinueJourney = () => {
     </div>
   );
 };
+
 export default ContinueJourney;

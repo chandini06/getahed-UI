@@ -8,7 +8,6 @@ import "./Myjourney.css";
 const MyJourney = () => {
   return (
     <div className="myjourney-wrapper">
-      {/* Journey Progress Video */}
       <video
         src={journeyVideo}
         autoPlay
@@ -18,7 +17,6 @@ const MyJourney = () => {
         className="journey-video"
       />
 
-      {/* Flex row for ContinueJourney + PerformanceStats */}
       <div className="journey-grid">
         <ContinueJourney />
         <PerformanceStats />
