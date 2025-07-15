@@ -2,13 +2,10 @@ import React from 'react';
 import './LessonsProgress.css';
 
 const LessonsProgress = () => {
-  // Sample static data (replace with props or backend data later)
   const total = 7;
   const completed = 3;
   const inProgress = 3;
   const notStarted = 1;
-
-  // For each ring radius
   const rings = [
     { label: 'Completed', value: completed, color: '#8733FF', r: 44 },
     { label: 'In-Progress', value: inProgress, color: '#5BB3FF', r: 34 },
@@ -31,7 +28,7 @@ const LessonsProgress = () => {
       </div>
 
       <svg className="progress-svg" viewBox="0 0 120 120">
-        {/* Background Rings */}
+
         {rings.map((ring, index) => (
           <circle
             key={index}
@@ -42,7 +39,6 @@ const LessonsProgress = () => {
           />
         ))}
 
-        {/* Foreground Progress Arcs */}
         {rings.map((ring, index) => (
           <circle
             key={index}
@@ -60,7 +56,6 @@ const LessonsProgress = () => {
         ))}
       </svg>
 
-      {/* Legend */}
       <div className="progress-legend">
         <div className="legend-item">
           <span className="legend-dot" style={{ background: '#8733FF' }}></span>

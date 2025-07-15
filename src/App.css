@@ -1,4 +1,3 @@
-/* General body setup */
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +5,6 @@ body {
   background-color: #F2F2F2;
 }
 
-/* Overall app container */
 .main-layout {
   background-color: #F2F2F2;
   min-height: 100vh;
@@ -14,11 +12,10 @@ body {
   padding: 24px;
   display: flex;
   flex-direction: column;
-  gap: 24px; /* 👈 Gap between Navbar and content */
+  gap: 24px; 
 }
 
-/* Sidebar and Dashboard layout */
 .content-layout {
   display: flex;
-  gap: 24px; /* 👈 Gap between Sidebar and Dashboard */
+  gap: 24px; 
 }

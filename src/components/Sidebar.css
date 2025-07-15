@@ -58,6 +58,17 @@
   background-color: transparent;
   color: #333;
 }
+.sidebar-links li.active-link {
+  border-left: 4px solid #8d50e9;
+  border-radius: 12px 0 0 12px;
+  background-color: transparent;
+}
+
+.sidebar-links li.active-link .link-content {
+  color: #503094;
+  font-weight: 500;
+}
+
 .upgrade-box {
   width: 192px;
   height: 180px;

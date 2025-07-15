@@ -39,7 +39,6 @@
   justify-content: space-between;
 }
 
-/* Card */
 .performance-card1 {
   flex: 1;
   background-color: #f5f0ff;
@@ -50,7 +49,6 @@
   text-align: center;
 }
 
-/* Icon circle */
 .icon-circle {
   background-color: #e0d6ff;
   width: 35px;
@@ -62,13 +60,11 @@
   margin: 0 auto 16px auto;
 }
 
-/* Icon */
 .stat-icon {
   color: #8733ff;
   font-size: 20px;
 }
 
-/* Titles and values */
 .stat-value {
   font-size: 14px;
   font-weight: 700;

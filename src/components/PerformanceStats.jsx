@@ -15,7 +15,6 @@ const PerformanceStats = () => {
       </div>
 
       <div className="performance-stats-row">
-        {/* Learning Time Card */}
         <div className="performance-card">
           <div className="icon-circle">
             <FaClock className="stat-icon" />
@@ -24,7 +23,6 @@ const PerformanceStats = () => {
           <p className="stat-subtext">Learning time</p>
         </div>
 
-        {/* Average/Day Card */}
         <div className="performance-card">
           <div className="icon-circle">
             <FaHourglassHalf className="stat-icon" />

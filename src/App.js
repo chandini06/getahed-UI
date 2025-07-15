@@ -7,6 +7,7 @@ import LearningPage from './pages/LearningPage';
 import Myjourney from './pages/Myjourney';
 import UpgradeToPro from './pages/UpgradeToPro';
 import AIPage1 from './pages/AIPage1'; 
+import ExploreJourneys from './pages/ExploreJourneys';
 
 import './App.css';
 
@@ -20,7 +21,7 @@ function App() {
         <Route path="/myjourney" element={<Myjourney />} />
         <Route path="/upgrade" element={<UpgradeToPro />} />
         <Route path="/aipage1" element={<AIPage1 />} />
-        
+        <Route path="/ExploreJourneys" element={<ExploreJourneys />} />
         {/* Add more routes as needed */}
       </Routes>
     </Router>
