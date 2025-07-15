@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Dashboard from './pages/Dashboard';
 import LearningPage from './pages/LearningPage';
 import Myjourney from './pages/Myjourney';
+import ExploreJourneys from './pages/ExploreJourneys';
 
 
 import './App.css';
@@ -16,6 +17,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/learning" element={<LearningPage />} />
         <Route path="/myjourney" element={<Myjourney />} />
+        <Route path="/ExploreJourneys" element={<ExploreJourneys/>}/>
       </Routes>
     </Router>
   );

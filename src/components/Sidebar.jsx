@@ -12,26 +12,30 @@ import {
   FaSignOutAlt,
   FaQuestionCircle,
 } from 'react-icons/fa';
-import { Link } from 'react-router-dom'; 
+import { Link, useLocation } from 'react-router-dom'; 
 
 const Sidebar = () => {
+  const location = useLocation(); 
+  const currentPath = location.pathname;
+
   return (
     <div className="sidebar">
       <ul className="sidebar-links">
-        <li>
-          <Link to="/" className="link-content">
+        <li className={currentPath === '/dashboard' ? 'active-link' : ''}>
+          <Link to="/dashboard" className="link-content">
             <FaTachometerAlt /> Dashboard
           </Link>
         </li>
-        <li>
+
+        <li className={currentPath === '/Myjourney' ? 'active-link' : ''}>
           <Link to="/Myjourney" className="link-content">
             <FaBook /> My Journey
           </Link>
         </li>
-        <li>
-          <div className="link-content">
+        <li className={currentPath === '/ExploreJourneys' ? 'active-link' : ''}>
+          <Link to="/ExploreJourneys" className="link-content">
             <FaUserGraduate /> Explore Journeys
-          </div>
+          </Link>
         </li>
         <li>
           <div className="link-content">

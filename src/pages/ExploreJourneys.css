@@ -1,0 +1,21 @@
+.ExploreJourneys-container {
+  display: flex;
+  flex-direction: column;
+  gap:  -40px;
+  margin-top: -24px;
+  padding: 24px;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.JourneyBanner-image {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.JourneyBanner-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
