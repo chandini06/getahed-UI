@@ -1,33 +1,28 @@
+// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-
-import Navbar from './components/Navbar';
-import Sidebar from './components/Sidebar';
 
 import Dashboard from './pages/Dashboard';
 import LearningPage from './pages/LearningPage';
 import Myjourney from './pages/Myjourney';
+import UpgradeToPro from './pages/UpgradeToPro';
+import AIPage1 from './pages/AIPage1'; 
 
 import './App.css';
 
 function App() {
   return (
     <Router>
-      <div className="main-layout">
-        <Navbar />
-
-        <div className="content-layout" style={{ display: 'flex' }}>
-          <Sidebar />
-          <div className="page-content w-full p-6">
-            <Routes>
-              <Route path="/" element={<Navigate to="/dashboard" />} />
-              <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/learning" element={<LearningPage />} />
-              <Route path="/myjourney" element={<Myjourney />} />
-            </Routes>
-          </div>
-        </div>
-      </div>
+      <Routes>
+        <Route path="/" element={<Navigate to="/dashboard" />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/learning" element={<LearningPage />} />
+        <Route path="/myjourney" element={<Myjourney />} />
+        <Route path="/upgrade" element={<UpgradeToPro />} />
+        <Route path="/aipage1" element={<AIPage1 />} />
+        
+        {/* Add more routes as needed */}
+      </Routes>
     </Router>
   );
 }

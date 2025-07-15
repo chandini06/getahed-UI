@@ -1,9 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import './AIHelpPrompt.css';
 import binocularsIcon from '../assets/binoculars.png';
 import arrowIcon from '../assets/arrow-icon.svg';
 
 const AIHelpPrompt = () => {
+  const navigate = useNavigate();
   return (
     <div className="ai-help">
       <img src={binocularsIcon} alt="AI Help" className="ai-icon" />
@@ -18,7 +21,9 @@ const AIHelpPrompt = () => {
 
         <div className="ai-search">
           <input type="text" placeholder="How to export a PDF to PPT using AI?" />
-          <button className="search-btn">
+          <button className="search-btn"
+          onClick={() => navigate('/aipage1')}>
+
             <img src={arrowIcon} alt="Search" />
           </button>
         </div>

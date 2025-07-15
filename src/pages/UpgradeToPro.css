@@ -1,0 +1,194 @@
+.upgrade-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 15px 28px;
+  background-color: #f1eaff;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  overflow: hidden;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 900px;
+  width: 100%;
+}
+
+.upgrade-heading {
+  font-size: 24px;
+  color: #503094;
+  margin-bottom: 26px;
+  font-weight: 5000;
+  
+}
+
+.toggle-plan {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 26px;
+  margin-left: 420px;
+}
+
+.toggle-btn {
+  padding: 9px 22px;
+  border: 1.5px solid #8733ff;
+  background-color: transparent;
+  color: #8733ff;
+  font-weight: 600;
+  border-radius: 10px 0 0 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.toggle-btn:last-child {
+  border-radius: 0 7px 7px 0;
+  border-left: none;
+}
+
+.toggle-btn.active {
+  background-color: #DCD2FF;
+  color: #8733ff;
+}
+
+.plan-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  display: flex;
+  width: 100%;
+  margin-left: 70px;
+  padding: 20px;
+  margin-bottom: 28px;
+  align-items: center;
+}
+
+.plan-left {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.plan-image {
+  width: 90px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.plan-info h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.users {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.desc {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333;
+  max-width: 380px;
+}
+
+.features {
+  list-style: none;
+  padding-left: 0;
+}
+
+.features li {
+  font-size: 14px;
+  margin-bottom: 6px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.features li::before {
+  content: '✔';
+  color: #8733ff;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.plan-right {
+  text-align: right;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2a0b57;
+}
+
+.per-user {
+  font-size: 13px;
+  color: #666;
+  margin: 4px 0 12px;
+}
+
+.upgrade-button {
+  background-color: #8733ff;
+  color: white;
+  border: none;
+  padding: 11px 22px;
+  font-size: 13.5px;
+  border-radius: 9px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.upgrade-button:hover {
+  background-color: #7329d4;
+}
+
+.note {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #555;
+}
+
+.note a {
+  color: #8733ff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.upgrade-mascot {
+  width: 360px;
+  height: 700px;
+  object-fit: contain;
+}
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  width: 36px;
+  height: 37px;
+  font-size: 20px;
+  background-color:#a3a1a1;
+  border: none;
+  color: #fff;
+  border-radius: 50%; 
+  cursor: pointer;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.close-button:hover {
+  background-color: #f3e7ff;
+  color: #a3a1a1;
+  border-color: #a3a1a1;
+}

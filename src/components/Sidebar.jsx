@@ -69,7 +69,8 @@ const Sidebar = () => {
         <div className="upgrade-text">
           <h4>Upgrade<br />to Pro</h4>
           <p>Get 1 month free on <br /> annual subscription</p>
-          <a href="#">Upgrade Today!</a>
+          <Link to="/upgrade">Upgrade Today!</Link>
+
         </div>
         <img src={upgradeImg} alt="Upgrade to Pro" className="upgrade-img" />
       </div>

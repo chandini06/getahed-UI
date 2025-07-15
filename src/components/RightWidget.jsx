@@ -5,8 +5,12 @@ import { FaFire } from 'react-icons/fa';
 import PerformanceStats1 from '../components/PerformanceStats1';
 import LessonsProgress from '../components/LessonsProgress';
 
+import { useNavigate } from 'react-router-dom';
+
 
 const RightWidget = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="right-widget">
       <div className="ask-box">
@@ -16,7 +20,11 @@ const RightWidget = () => {
         </p>
         <div className="ask-input">
           <input type="text" placeholder="How to export a PDF to PPT using AI?" />
-          <button className="send-btn"><FiSend /></button>
+          <button className="send-btn" onClick={() => navigate('/aipage1')}>
+  <FiSend />
+</button>
+
+
         </div>
       </div>
 
