@@ -111,3 +111,8 @@
   width: 105px;
   height: 170px;
 }
+.upgrade-link-wrapper {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* Ensures the entire area is clickable */
+}

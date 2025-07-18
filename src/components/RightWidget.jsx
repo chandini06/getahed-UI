@@ -1,32 +1,66 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './RightWidget.css';
 import { FiSend } from 'react-icons/fi';
 import { FaFire } from 'react-icons/fa';
 import PerformanceStats1 from '../components/PerformanceStats1';
 import LessonsProgress from '../components/LessonsProgress';
-
 import { useNavigate } from 'react-router-dom';
 
+import avatarImg from '../assets/ai-character.png'; // use your avatar image
+
+const promptList = [
+  'How to export a PDF to PPT using AI?',
+  'How to summarize articles with AI?',
+  'Give me daily productivity tips using AI',
+  'How to create presentation using AI tools?'
+];
 
 const RightWidget = () => {
   const navigate = useNavigate();
 
+  const [currentPromptIndex, setCurrentPromptIndex] = useState(0);
+  const [avatarVisible, setAvatarVisible] = useState(true);
+
+  // Rotate prompts
+  useEffect(() => {
+    const promptInterval = setInterval(() => {
+      setCurrentPromptIndex((prev) => (prev + 1) % promptList.length);
+    }, 3000);
+    return () => clearInterval(promptInterval);
+  }, []);
+
+  // Toggle avatar visibility
+  useEffect(() => {
+    const avatarInterval = setInterval(() => {
+      setAvatarVisible((prev) => !prev);
+    }, 3000);
+    return () => clearInterval(avatarInterval);
+  }, []);
+
   return (
     <div className="right-widget">
       <div className="ask-box">
-        <div className="avatar-circle"></div>
-        <p className="ask-title">
-          Ask me anything, I’m here to help you to <span className="highlight">Getah’ed</span>
-        </p>
-        <div className="ask-input">
-          <input type="text" placeholder="How to export a PDF to PPT using AI?" />
-          <button className="send-btn" onClick={() => navigate('/aipage1')}>
-  <FiSend />
-</button>
+  <div className="avatar-circle">
+    {avatarVisible && (
+      <img src={avatarImg} alt="AI Avatar" className="avatar-inside" />
+    )}
+  </div>
 
+  <p className="ask-title">
+    Ask me anything, I’m here to help you to <span className="highlight">Getah’ed</span>
+  </p>
 
-        </div>
-      </div>
+  <div className="ask-input">
+    <input
+      type="text"
+      placeholder={promptList[currentPromptIndex]}
+    />
+    <button className="send-btn" onClick={() => navigate('/aipage1')}>
+      <FiSend />
+    </button>
+  </div>
+</div>
+
 
       <div className="streak-box">
         <h4 className="streak-title">Your Daily Streak</h4>
@@ -49,6 +83,7 @@ const RightWidget = () => {
         </div>
         <div className="streak-percent">25%</div>
       </div>
+
       <PerformanceStats1 />
       <LessonsProgress />
     </div>

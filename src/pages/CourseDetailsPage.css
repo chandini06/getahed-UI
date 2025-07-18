@@ -1,0 +1,11 @@
+.course-page-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.course-body {
+  display: flex;
+  flex: 1;
+  overflow-y: auto; /* Whole page scroll */
+}

@@ -43,13 +43,22 @@
 }
 
 .journey-card {
-  width: 210px;
-  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: white;
+  padding: 12px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  padding: 16px;
-  
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
 }
+
+.journey-card:hover {
+  transform: translateY(-4px);
+}
+
 
 .journey-card img {
   width: 100%;

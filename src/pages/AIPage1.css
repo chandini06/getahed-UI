@@ -1,109 +1,144 @@
 .ai-page {
-  min-height: 100vh;           
-  background-color: none;   
+  background: #f3f0fd;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0 40px 40px;
-  box-sizing: border-box;
-  font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 .ai-body {
-  width: 1400px;
-  height: 475px;
-  margin-top: 26px;
-  background-color: #f4f3fb;
-  padding: 32px;
-  border-radius: 16px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: flex-start;  
-  text-align: center; 
-  padding-top: 48px; 
+  align-items: center;
 }
 
 .centered-title {
   font-size: 20px;
-  font-weight: 600;
-  color: #2a0b57;
+  margin-bottom: 20px;
+  color: #3a3a3a;
+  font-weight: 500;
 }
 
-.ai-avatar {
-  width: 120px;
-  height: 120px;
-  background-color: #d6ccfa;
-  border-radius: 50%;
-  margin-bottom: 24px;
-}
-
-.ai-input-wrapper {
-  display: flex;
-  align-items: center;
+/* Chat Box Styles */
+.chat-box {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
+  height: 300px;
+  background: #f3edff;
+  border: 2px solid #a47eff;
+  border-radius: 15px;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Message alignment */
+.chat-message {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 5px;
+}
+.chat-message.user {
+  justify-content: flex-end;
+}
+.chat-message.ai {
+  justify-content: flex-start;
+}
+
+/* Avatar Styling */
+.avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.avatar.ai-icon {
+  width: 38px;
+  height: 38px;
+  font-size: 38px;
+  color: #775fe7;
+  background: #ece8f9;
+  padding: 6px;
+  border-radius: 50%;
+  box-shadow: 0 1px 6px rgba(60,41,136,0.12);
+  margin-right: 7px;
+}
+
+/* Bubble styling - user and ai */
+.message-text {
+  padding: 8px 14px;
+  border-radius: 20px;
+  max-width: 70%;
+  font-size: 14px;
+  word-break: break-word;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+/* User right bubble */
+.chat-message.user .message-text {
+  background: linear-gradient(120deg, #a47eff 90%, #e2d8ff 100%);
+  color: #fff;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 20px;
+  margin-right: 8px;
+}
+
+/* AI left bubble */
+.chat-message.ai .message-text {
+  background: linear-gradient(120deg, #73d8eb 30%, #775fe7 100%);
+  color: #fff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 20px;
+  margin-left: 8px;
+  margin-right: 0;
+  box-shadow: 0 1px 10px rgba(119,95,231,0.10);
+}
+
+/* Input & send */
+.ai-input-wrapper {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  border: 2px solid #a47eff;
   border-radius: 12px;
   overflow: hidden;
-  margin-bottom: 24px;
-
-  
-  background-color: transparent;
-  border: none;
-  padding: 0;
 }
 
 .ai-input {
   flex: 1;
-  padding: 12px 16px;
-  border: 1.5px solid #8733ff;
-  border-radius: 12px;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
   outline: none;
-  height:80px;
-  font-size: 14px;
 }
 
 .ai-send-button {
-  margin-left: 8px;
-  width: 36px;
-  height: 36px;
-  background-color: #8733ff;
+  background: #a47eff;
   border: none;
-  border-radius: 50%;
   color: white;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
   cursor: pointer;
-  position: relative;
-  top: 2px; 
 }
 
-.ai-send-button:hover {
-  background-color: #7329d4;
-}
-
-
-
+/* Suggested questions */
 .suggested-questions {
+  margin-top: 25px;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   justify-content: center;
 }
-
 .suggested-questions button {
-  background-color: #eee6ff;
+  padding: 8px 12px;
+  background: #a47eff;
   border: none;
-  padding: 10px 16px;
   border-radius: 8px;
-  font-size: 13px;
-  color: #2a0b57;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.suggested-questions button:hover {
-  background-color: #d9caff;
+  font-size: 14px;
 }

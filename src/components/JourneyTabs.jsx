@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './JourneyTabs.css';
+import { Link } from 'react-router-dom';
 import { FiClock, FiBookOpen, FiUsers } from 'react-icons/fi';
 import made1 from '../assets/Journeycard1.png';
 import made2 from '../assets/Journeycard2.png';
@@ -83,15 +84,15 @@ const JourneyTabs = () => {
         <div className="tab-content">
           <div className="tab-section">
             {journeysData[activeTab].map((journey, index) => (
-              <div className="journeytab-cardd" key={index}>
-                <img src={journey.image} alt={journey.title} />
-                <div className="journeytab-card-title">{journey.title}</div>
-                <div className="journeytab-card-meta">
-                  <span><FiClock /> 2 Hours</span>
-                  <span><FiBookOpen /> 10 Modules</span>
-                  <span><FiUsers /> 50+</span>
-                </div>
-              </div>
+              <Link to="/course-details" key={index} className="journeytab-cardd">
+                                        <img src={journey.image} alt={journey.title} />
+                                        <p className="journeytab-card-title">{journey.title}</p>
+                                        <div className="journeytab-card-meta">
+                                          <span><FiClock /> 2 Hours</span>
+                                          <span><FiBookOpen /> 10 Modules</span>
+                                          <span><FiUsers /> 50+</span>
+                                        </div>
+                                      </Link>
             ))}
           </div>
         </div>

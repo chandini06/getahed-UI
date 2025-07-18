@@ -154,3 +154,31 @@
   text-align: right;
   margin-top: -13px;
 }
+.avatar-circle {
+  width: 115px;
+  height: 115px;
+  background-color: #8733FF; 
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-inside {
+  width: 140px;
+  height: 160x;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  border-radius: 50%;
+  object-fit: cover;
+  animation: fadeInOut 3s infinite ease-in-out;
+}
+
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
