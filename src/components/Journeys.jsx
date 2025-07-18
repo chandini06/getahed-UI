@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiClock, FiBookOpen, FiUsers } from 'react-icons/fi';
+import { Link } from 'react-router-dom'; // ✅ added for navigation
 import './Journeys.css';
 
 import card1 from '../assets/card1.png';
@@ -47,7 +48,7 @@ const Journeys = () => {
 
         <div className="journeys-grid">
           {journeyData.map((item, index) => (
-            <div className="journey-card" key={index}>
+            <Link to="/course-details" key={index} className="journey-card">
               <img src={item.image} alt={item.title} />
               <p className="card-title">{item.title}</p>
               <div className="card-meta">
@@ -55,7 +56,7 @@ const Journeys = () => {
                 <span><FiBookOpen /> 10 Modules</span>
                 <span><FiUsers /> 50+</span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Sidebar.css';
 import upgradeImg from '../assets/upgrade-pro.png';
+
 import {
   FaTachometerAlt,
   FaBook,
@@ -69,15 +70,16 @@ const Sidebar = () => {
         </li>
       </ul>
 
-      <div className="upgrade-box">
-        <div className="upgrade-text">
-          <h4>Upgrade<br />to Pro</h4>
-          <p>Get 1 month free on <br /> annual subscription</p>
-          <Link to="/upgrade">Upgrade Today!</Link>
-
-        </div>
-        <img src={upgradeImg} alt="Upgrade to Pro" className="upgrade-img" />
-      </div>
+     <Link to="/upgrade" className="upgrade-link-wrapper">
+  <div className="upgrade-box">
+    <div className="upgrade-text">
+      <h4>Upgrade<br />to Pro</h4>
+      <p>Get 1 month free on <br /> annual subscription</p>
+      <span className="upgrade-cta">Upgrade <br></br>Today!</span>
+    </div>
+    <img src={upgradeImg} alt="Upgrade to Pro" className="upgrade-img" />
+  </div>
+</Link>
     </div>
   );
 };

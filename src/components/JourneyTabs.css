@@ -75,6 +75,7 @@
 .journeytab-cardd{
   background-color: #fff;
   border-radius: 14px;
+  text-decoration: none;
   width:248px;
   height: 300px;
   overflow: hidden;
