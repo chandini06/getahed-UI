@@ -5,11 +5,11 @@ import FinalTest from "../components/FinalTest";
 import "./TestPage.css"; // Import the CSS provided below
 
 const TestPage = () => (
-  <div className="test-page-root">
+  <div className="test-page-root1">
     <AINavbar />
-    <div className="test-page-layout">
+    <div className="test-page-layout1">
       <CourseSidebar />
-      <main className="test-page-content">
+      <main className="test-page-content1">
         <FinalTest />
       </main>
     </div>
