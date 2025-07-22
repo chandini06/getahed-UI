@@ -19,7 +19,6 @@
   font-weight: 500;
 }
 
-/* Chat Box Styles */
 .chat-box {
   width: 100%;
   max-width: 700px;
@@ -34,7 +33,6 @@
   gap: 10px;
 }
 
-/* Message alignment */
 .chat-message {
   display: flex;
   align-items: flex-end;
@@ -47,7 +45,6 @@
   justify-content: flex-start;
 }
 
-/* Avatar Styling */
 .avatar {
   width: 24px;
   height: 24px;
@@ -65,7 +62,6 @@
   margin-right: 7px;
 }
 
-/* Bubble styling - user and ai */
 .message-text {
   padding: 8px 14px;
   border-radius: 20px;
@@ -76,7 +72,7 @@
   line-height: 1.5;
 }
 
-/* User right bubble */
+
 .chat-message.user .message-text {
   background: linear-gradient(120deg, #a47eff 90%, #e2d8ff 100%);
   color: #fff;
@@ -85,7 +81,7 @@
   margin-right: 8px;
 }
 
-/* AI left bubble */
+
 .chat-message.ai .message-text {
   background: linear-gradient(120deg, #73d8eb 30%, #775fe7 100%);
   color: #fff;
@@ -96,7 +92,6 @@
   box-shadow: 0 1px 10px rgba(119,95,231,0.10);
 }
 
-/* Input & send */
 .ai-input-wrapper {
   margin-top: 20px;
   display: flex;
@@ -126,7 +121,6 @@
   cursor: pointer;
 }
 
-/* Suggested questions */
 .suggested-questions {
   margin-top: 25px;
   display: flex;

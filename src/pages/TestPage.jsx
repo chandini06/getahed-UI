@@ -2,7 +2,7 @@ import React from "react";
 import AINavbar from "../components/AINavbar";
 import CourseSidebar from "../components/CourseSidebar";
 import FinalTest from "../components/FinalTest";
-import "./TestPage.css"; // Import the CSS provided below
+import "./TestPage.css";
 
 const TestPage = () => (
   <div className="test-page-root1">

@@ -8,7 +8,7 @@ const PerformanceStats1 = () => {
     <div className="performance-container1">
       <div className="performance-header1">
         <h2 className="performance-heading1">Your Performance</h2>
-        <select className="filter-dropdown">
+        <select className="filter-dropdown1">
           <option>This Week</option>
         </select>
       </div>
