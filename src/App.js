@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
@@ -9,6 +8,8 @@ import UpgradeToPro from './pages/UpgradeToPro';
 import AIPage1 from './pages/AIPage1'; 
 import ExploreJourneys from './pages/ExploreJourneys';
 import CourseDetailsPage from './pages/CourseDetailsPage';
+import TestPage from './pages/TestPage';
+
 
 import AddonRoutes from './addons/AddonRoutes';
 
@@ -28,6 +29,8 @@ function App() {
         <Route path="/course-details" element={<CourseDetailsPage />} />
         
         <Route path="/addons/*" element={<AddonRoutes />} />
+        <Route path="/test" element={<TestPage />} />
+
         {/* Add more routes as needed */}
       </Routes>
     </Router>

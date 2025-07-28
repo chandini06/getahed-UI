@@ -95,24 +95,31 @@ const CourseSidebar = () => {
 
           {openModules.includes(index) && module.lessons.length > 0 && (
             <div className="lesson-list">
-              {module.lessons.map((lesson, i) => (
-                <div
-                  key={i}
-                  className={`lesson-card ${lesson.isPlaying ? 'active' : ''}`}
-                >
-                  <div className="lesson-header">
-                    {lesson.isPlaying ? (
-                      <PauseCircle size={18} className="icon" />
-                    ) : (
-                      <PlayCircle size={18} className="icon" />
-                    )}
-                    <div>
-                      <p className="lesson-title">{lesson.title}</p>
-                      <p className="lesson-time">{lesson.duration}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
+             {module.lessons.map((lesson, i) => (
+  <div
+    key={i}
+    className={`lesson-card ${lesson.isPlaying ? 'active' : ''}`}
+    onClick={() => {
+      if (lesson.title === 'Final Test') {
+        navigate('/test'); // <-- Change '/test' to your actual TestPage route if different
+      }
+    }}
+    style={lesson.title === 'Final Test' ? { cursor: 'pointer' } : {}}
+  >
+    <div className="lesson-header">
+      {lesson.isPlaying ? (
+        <PauseCircle size={18} className="icon" />
+      ) : (
+        <PlayCircle size={18} className="icon" />
+      )}
+      <div>
+        <p className="lesson-title">{lesson.title}</p>
+        <p className="lesson-time">{lesson.duration}</p>
+      </div>
+    </div>
+  </div>
+))}
+
             </div>
           )}
 

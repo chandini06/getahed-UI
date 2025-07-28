@@ -6,9 +6,9 @@ import './CourseDetailsPage.css';
 
 const CourseDetailsPage = () => {
   return (
-    <div className="course-page-layout">
+    <div className="course-page-layout1">
       <AINavbar />
-      <div className="course-body">
+      <div className="course-body1">
         <CourseSidebar />
         <CourseMainContent />
       </div>
