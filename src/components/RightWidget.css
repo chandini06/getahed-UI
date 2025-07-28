@@ -1,11 +1,20 @@
-.right-widget {
+.avatar-inside1 {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.right-widget1 {
   display: flex;
   flex-direction: column;
   gap: 24px;
   font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-.ask-box {
+.ask-box1 {
   background-color: #e5d8ff;
   border-radius: 20px;
   height: 250px;
@@ -13,27 +22,32 @@
   text-align: center;
 }
 
-.avatar-circle {
+.avatar-circle1 {
   width: 100px;
   height: 100px;
   background-color: #8733FF;
   border-radius: 50%;
   margin: 0 auto 16px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.ask-title {
+.ask-title1 {
   font-size: 14px;
   font-weight: 500;
   color: #333;
   margin-bottom: 16px;
 }
 
-.ask-title .highlight {
+.ask-title1 .highlight {
   color: #8733FF;
   font-weight: 600;
 }
 
-.ask-input {
+.ask-input1 {
   display: flex;
   background-color: #fff;
   border-radius: 12px;
@@ -42,7 +56,7 @@
   justify-content: space-between;
 }
 
-.ask-input input {
+.ask-input1 input {
   border: none;
   outline: none;
   flex: 1;
@@ -51,17 +65,24 @@
   padding: 6px;
 }
 
-.send-btn {
+.send-btn1 {
   width: 32px;
   height: 32px;
   background-color: #8733FF;
   color: #fff;
+
   border: none;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.send-icon1 {
+  width: 18px;
+  height: 18px;
+  
 }
 
 .streak-box {

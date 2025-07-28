@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './RightWidget.css';
-import { FiSend } from 'react-icons/fi';
+import arrowIcon from '../assets/arrow-icon.svg';
 import { FaFire } from 'react-icons/fa';
 import PerformanceStats1 from '../components/PerformanceStats1';
 import LessonsProgress from '../components/LessonsProgress';
 import { useNavigate } from 'react-router-dom';
 
-import avatarImg from '../assets/ai-character.png'; // use your avatar image
+import avatarImg from '../assets/ai-character.png'; 
 
 const promptList = [
   'How to export a PDF to PPT using AI?',
@@ -21,7 +21,7 @@ const RightWidget = () => {
   const [currentPromptIndex, setCurrentPromptIndex] = useState(0);
   const [avatarVisible, setAvatarVisible] = useState(true);
 
-  // Rotate prompts
+  
   useEffect(() => {
     const promptInterval = setInterval(() => {
       setCurrentPromptIndex((prev) => (prev + 1) % promptList.length);
@@ -29,7 +29,7 @@ const RightWidget = () => {
     return () => clearInterval(promptInterval);
   }, []);
 
-  // Toggle avatar visibility
+ 
   useEffect(() => {
     const avatarInterval = setInterval(() => {
       setAvatarVisible((prev) => !prev);
@@ -38,25 +38,25 @@ const RightWidget = () => {
   }, []);
 
   return (
-    <div className="right-widget">
-      <div className="ask-box">
-  <div className="avatar-circle">
+    <div className="right-widget1">
+      <div className="ask-box1">
+  <div className="avatar-circle1">
     {avatarVisible && (
-      <img src={avatarImg} alt="AI Avatar" className="avatar-inside" />
+      <img src={avatarImg} alt="AI Avatar" className="avatar-inside1" />
     )}
   </div>
 
-  <p className="ask-title">
-    Ask me anything, I’m here to help you to <span className="highlight">Getah’ed</span>
+  <p className="ask-title1">
+    Ask me anything, I’m here to help you to <span className="highlight1">Getah’ed</span>
   </p>
 
-  <div className="ask-input">
+  <div className="ask-input1">
     <input
       type="text"
       placeholder={promptList[currentPromptIndex]}
     />
-    <button className="send-btn" onClick={() => navigate('/aipage1')}>
-      <FiSend />
+    <button className="send-btn1" onClick={() => navigate('/aipage1')}>
+      <img src={arrowIcon} alt="Send" className="send-icon1" />
     </button>
   </div>
 </div>

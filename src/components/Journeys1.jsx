@@ -43,15 +43,15 @@ const Journeys1 = () => {
       <div className="journeys-section1">
         <div className="journeys-header1">
           <h3>Journeys Made For You</h3>
-          <span className="journeys-more">More &gt;&gt;</span>
+          <span className="journeys-more1">More &gt;&gt;</span>
         </div>
 
-        <div className="journeys-grid">
+        <div className="journeys-grid1">
           {journeyData.map((item, index) => (
-            <Link to="/course-details" key={index} className="journey-card">
+            <Link to="/course-details" key={index} className="journey-card1">
                           <img src={item.image} alt={item.title} />
-                          <p className="card-title">{item.title}</p>
-                          <div className="card-meta">
+                          <p className="card-title1">{item.title}</p>
+                          <div className="card-meta1">
                             <span><FiClock /> 2 Hours</span>
                             <span><FiBookOpen /> 10 Modules</span>
                             <span><FiUsers /> 50+</span>

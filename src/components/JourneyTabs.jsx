@@ -60,7 +60,7 @@ const JourneyTabs = () => {
   return (
     <div className='journey-tabs-wrapper'>
       <div className="journey-tabs-container">
-        <div className="tab-buttons">
+        <div className="journey-tab-buttons">
           <button
             className={activeTab === 'made' ? 'tab active' : 'tab'}
             onClick={() => setActiveTab('made')}
@@ -81,8 +81,8 @@ const JourneyTabs = () => {
           </button>
         </div>
 
-        <div className="tab-content">
-          <div className="tab-section">
+        <div className="journey-tab-content">
+          <div className="journey-tab-section">
             {journeysData[activeTab].map((journey, index) => (
               <Link to="/course-details" key={index} className="journeytab-cardd">
                                         <img src={journey.image} alt={journey.title} />

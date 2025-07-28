@@ -10,6 +10,8 @@ import AIPage1 from './pages/AIPage1';
 import ExploreJourneys from './pages/ExploreJourneys';
 import CourseDetailsPage from './pages/CourseDetailsPage';
 
+import AddonRoutes from './addons/AddonRoutes';
+
 import './App.css';
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
         <Route path="/aipage1" element={<AIPage1 />} />
         <Route path="/ExploreJourneys" element={<ExploreJourneys />} />
         <Route path="/course-details" element={<CourseDetailsPage />} />
+        
+        <Route path="/addons/*" element={<AddonRoutes />} />
         {/* Add more routes as needed */}
       </Routes>
     </Router>

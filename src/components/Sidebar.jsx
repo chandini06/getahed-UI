@@ -12,6 +12,7 @@ import {
   FaBell,
   FaSignOutAlt,
   FaQuestionCircle,
+  FaPuzzlePiece
 } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom'; 
 
@@ -36,6 +37,11 @@ const Sidebar = () => {
         <li className={currentPath === '/ExploreJourneys' ? 'active-link' : ''}>
           <Link to="/ExploreJourneys" className="link-content">
             <FaUserGraduate /> Explore Journeys
+          </Link>
+        </li>
+        <li className={currentPath.startsWith('/addons') ? 'active-link' : ''}>
+          <Link to="/addons/login" className="link-content">
+            <FaPuzzlePiece /> Add-ons
           </Link>
         </li>
         <li>

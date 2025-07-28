@@ -1,0 +1,222 @@
+ .addon-dashboard-wrapper {
+  min-height: 100vh;
+  background: #f9f9f9;
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+ .addon-dashboard-main {
+  padding: 90px 24px 40px;
+  text-align: center;
+}
+
+ .addon-dashboard-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px 32px 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+ .addon-stat-card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+ .addon-stat-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+ .addon-stat-card h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+ .addon-stat-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ .addon-stat-icon {
+  width: 24px;
+  height: 24px;
+}
+
+ .addon-mode-options {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+ .addon-mode-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 30px 40px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  width: 100%;
+  max-width: 670px;
+  transition: transform 0.2s;
+}
+
+ .addon-mode-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+ .addon-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+ .addon-card-header .icon {
+  color: #2a57e8;
+}
+
+ .addon-label-title {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+ .addon-labels {
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+ .addon-label {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin: 4px;
+  color: #fff;
+  font-weight: 500;
+}
+
+ .addon-label.blue {
+  background-color: #cfe3ff;
+  color: #0047b3;
+}
+
+ .addon-label.green {
+  background-color: #d3f4d1;
+  color: #176b2c;
+}
+
+ .addon-label.purple {
+  background-color: #eedaff;
+  color: #6200ea;
+}
+
+ .addon-label.orange {
+  background-color: #ffe2ba;
+  color: #c97b00;
+}
+
+ .addon-label.red {
+  background-color: #ffcdd2;
+  color: #c62828;
+}
+
+ .addon-primary-btn,
+ .addon-secondary-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+ .addon-primary-btn {
+  background-color: #010113ff;
+  color: #fff;
+  border: none;
+}
+
+ .addon-primary-btn:hover {
+  background-color: #00000d;
+}
+
+ .addon-secondary-btn {
+  background-color: #010113ff;
+  color: #fff;
+  border: none;
+}
+
+ .addon-secondary-btn:hover {
+  background-color: #1a1f30;
+}
+
+/* Interview card override */
+.addon-mode-card:nth-child(2) .addon-secondary-btn {
+  background-color: #010113 !important;
+  color: white !important;
+  border: none !important;
+}
+
+ .addon-mode-card:nth-child(2) .addon-secondary-btn:hover {
+  background-color: #000000 !important;
+}
+
+/* Admin Cards Styling */
+.addon-admin-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+ .addon-mode-card.admin {
+  flex: 1 1 300px;
+  max-width: 360px;
+}
+
+ .addon-mode-card.admin h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #0b1120;
+}
+
+ .addon-mode-card.admin p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+ .addon-mode-card.admin .addon-primary-btn,
+ .addon-mode-card.admin .addon-secondary-btn {
+  background-color: #010113ff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+
+ .addon-mode-card.admin .addon-primary-btn:hover,
+ .addon-mode-card.admin .addon-secondary-btn:hover {
+  background-color: #00000d;
+}
